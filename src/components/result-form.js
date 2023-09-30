@@ -34,11 +34,8 @@ const ResultForm = ({ user, criterion, max }) => {
   );
 
   const onChange = useCallback(
-    e => {
-      if (!focused || lockAcquired)
-        dispatch(resultsSlice.actions.dirtyUpdate({ user, criterion, value: e.target.value }));
-    },
-    [user, criterion, dispatch, focused, lockAcquired]
+    e => dispatch(resultsSlice.actions.dirtyUpdate({ user, criterion, value: e.target.value })),
+    [user, criterion, dispatch]
   );
 
   useEffect(

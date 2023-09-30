@@ -38,8 +38,8 @@ const ResultForm = ({ user }) => {
   );
 
   const onChange = useCallback(
-    e => lockAcquired && dispatch(commentsSlice.actions.dirtyUpdate({ user, value: e.target.value })),
-    [user, dispatch, lockAcquired]
+    e => dispatch(commentsSlice.actions.dirtyUpdate({ user, value: e.target.value })),
+    [user, dispatch]
   );
 
   const onDropdownItemClick = useCallback(
