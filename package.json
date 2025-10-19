@@ -11,7 +11,7 @@
   "dependencies": {
     "@rails/actioncable": "^7.2.201",
     "@reduxjs/toolkit": "^1.9.6",
-    "bootstrap": "^5.3.3",
+    "bootstrap": "^5.3.8",
     "classnames": "^2.5.1",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
