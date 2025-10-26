@@ -184,7 +184,7 @@ describe('UI State Integration Tests', () => {
       locks: {}
     });
 
-    const { rerender } = render(
+    render(
       <Provider store={store}>
         <ResultForm user="user-1" criterion="c1" max={10} />
       </Provider>

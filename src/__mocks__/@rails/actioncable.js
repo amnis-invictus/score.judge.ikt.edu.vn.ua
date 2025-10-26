@@ -91,8 +91,10 @@ export const getMockSubscription = () => {
 
 export const createConsumer = createMockConsumer;
 
-export default {
+const actionCableMock = {
   createConsumer: createMockConsumer,
   getMockConsumer,
   getMockSubscription
 };
+
+export default actionCableMock;

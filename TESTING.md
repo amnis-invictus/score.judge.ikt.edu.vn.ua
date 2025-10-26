@@ -9,6 +9,15 @@ The test suite includes 37 integration tests organized into 4 test files that ve
 2. **State management** - Redux state updates correctly from server messages
 3. **UI behavior** - Components render and respond correctly to state changes
 
+## Continuous Integration
+
+The tests run automatically on every push and pull request via GitHub Actions:
+- **Test & Coverage Workflow** (`.github/workflows/test-coverage.yml`)
+  - Runs on Node.js 18.x and 20.x
+  - Generates code coverage reports
+  - Posts coverage summary to pull requests
+  - Uploads coverage to Codecov (if configured)
+
 ## Test Files
 
 ### 1. `criterion-api.integration.test.js` (6 tests)

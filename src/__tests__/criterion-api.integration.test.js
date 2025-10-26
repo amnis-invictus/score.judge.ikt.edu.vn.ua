@@ -19,8 +19,6 @@ import comments from '../state/comments';
 import judges from '../state/judges';
 import resultMultiplier from '../state/result-multiplier';
 
-import { clearPerformedActions, findAction } from '../testUtils';
-
 // Create a mock API that tracks calls
 const mockPerform = jest.fn();
 const performedActions = [];
