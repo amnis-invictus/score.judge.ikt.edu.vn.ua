@@ -25,6 +25,8 @@ case "${ENVIRONMENT}" in
     ;;
 esac
 
+export REACT_APP_REVISION="$(git rev-parse HEAD) $(date -u '+%Y-%m-%d %H:%M:%S') ${ENVIRONMENT}"
+
 rm -rf "${BUILD_PATH}"
 npm install
 
